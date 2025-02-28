@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 1fr auto;
+    margin: 0px;
+}
+
+header {
+    background: darkgrey;
+    padding: 1rem;
+    grid-column: 1 / 4;
+}
+
+nav {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+nav a {
+    color: white;
+}
+
+main {
+    background: white;
+    grid-column: 1 / 2;
+    padding: 1rem;
+}
+
+aside {
+    background: lightgrey;
+    grid-column: 2 / 2;
+    padding: 1rem;
+}
+
+footer {
+    background: darkgrey;
+    padding: 1rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
