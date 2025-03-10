@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 1fr auto;
+    margin: 0px;
+}
+
+header {
+    background: darkgrey;
+    grid-column: 1 / 4;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    background: white;
+    max-width: 1024px;
+    margin: 1em auto 1em auto;
+    grid-template: 1fr / 2fr 1fr;
+}
+
+main.card:nth-of-type(1) {
+    grid-column: 1 / 2;
+}
+
+main.card:nth-of-type(2) {
+    grid-column: 2 / 2;
+}
+
+.card {
+    background: darkblue;
+    margin: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+    display: grid;
+    grid-template: auto 1fr / 1fr;
+}
+
+.card h2 {
+    margin: 1em;
+    color: white;
+    text-align: center;
+}
+
+.card article {
+    background: white;
+    border-radius: 0em 0em 1em 1em;
+    padding: 1em;
+}
+
+.aboutme {
+    display: grid;
+    grid-template: auto / 1fr auto;
+}
+
+.aboutme p {
+    margin: 0em 1em 0em 0em;
+}
+
+.aboutme img {
+    width: 128px;
+    border-radius: 1em;
+}
+
+.aboututah {
+
+}
+
+.aboututah div {
+    display: grid;
+    grid-template: auto / auto 1fr;
+}
+
+.aboututah p {
+    margin: 0em 0em 0em 1em;
+}
+
+footer {
+    background: darkgrey;
+    padding: 1rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+footer #currentyear {
+    margin: 0px 4px 0px 4px;
+}
