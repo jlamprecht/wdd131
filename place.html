@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Jaren Lamprecht - Place Page">
+    <meta name="author" content="Jaren Lamprecht">
+
+    <title>WDD 131 – Dynamic Web Fundamentals - Jaren Lamprecht</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Utah, USA</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/landscape-1500.webp" media="(min-width: 1000px)">
+                <source srcset="images/landscape-1000.webp" media="(min-width: 550px)">
+                <img alt="landscape" src="images/landscape-500.webp" width="500" height="281">
+            </picture>
+        </div>
+        <div class="card data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <td class="key">Area:</td>
+                    <td class="value">84,900 sq mi</td>
+                </tr>
+                <tr>
+                    <td class="key">Population:</td>
+                    <td class="value">3,440,000</td>
+                </tr>
+                <tr>
+                    <td class="key">Capital:</td>
+                    <td class="value">Salt Lake City</td>
+                </tr>
+                <tr>
+                    <td class="key">Languages:</td>
+                    <td class="value">English</td>
+                </tr>
+                <tr>
+                    <td class="key">Currency:</td>
+                    <td class="value">USD</td>
+                </tr>
+                <tr>
+                    <td class="key">Time Zone:</td>
+                    <td class="value">UTC-6</td>
+                </tr>
+                <tr>
+                    <td class="key">Calling Code:</td>
+                    <td class="value">+1</td>
+                </tr>
+                <tr>
+                    <td class="key">Internet TLD:</td>
+                    <td class="value">.us</td>
+                </tr>
+            </table>
+        </div>
+        <div class="card weather">
+            <h2>Weather</h2>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span>©</span><span id="currentyear"></span><span>Jaren Lamprecht - Utah, USA</span>
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+</body>
+
+</html>

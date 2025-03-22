@@ -1,0 +1,9 @@
+@media screen and (min-width: 560px) {
+    main {
+        display: grid;
+    }
+
+    .card h2 {
+        text-align: left;
+    }
+}
