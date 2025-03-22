@@ -69,7 +69,7 @@ td.value {
 } 
 
 .weather h2::after{
-    content: url("/images/partly-cloudy.svg");
+    content: url("../images/partly-cloudy.svg");
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
