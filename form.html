@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Jaren Lamprecht - Form">
+    <meta name="author" content="Jaren Lamprecht">
+
+    <title>WDD 131 – Dynamic Web Fundamentals - Jaren Lamprecht</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" selected disabled>Select a Product...</option>
+            </select>
+            <label for="rating">Overal Rating</label>
+            <fieldset id="rating">
+                <div class="star">
+                    <label for="star-1">&star;</label>
+                    <input type="radio" name="rating" id="star-1" value="1" required>
+                </div>
+                <div class="star">
+                    <label for="star-1">&star;&star;</label>
+                    <input type="radio" name="rating" id="star-2" value="2" required>
+                </div>
+                <div class="star">
+
+                    <label for="star-1">&star;&star;&star;</label>
+                    <input type="radio" name="rating" id="star-3" value="3" required>
+                </div>
+                <div class="star">
+                    <label for="star-1">&star;&star;&star;&star;</label>
+                    <input type="radio" name="rating" id="star-4" value="4" required>
+                </div>
+                <div class="star">
+                    <label for="star-1">&star;&star;&star;&star;&star;</label>
+                    <input type="radio" name="rating" id="star-5" value="5" required>
+                </div>
+            </fieldset>
+            <label for="date">Date of Installation</label>
+            <input type="date" id="date" name="date" required>
+            <label for="features">
+                <div>Which features did you find useful in the product?</div>
+                <div class="parenthetical">(Check all that apply)</div>
+            </label>
+            <fieldset id="features">
+                <div class="check">
+                    <input type="checkbox" id="durability" name="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="ease" name="ease">
+                    <label for="ease">Ease of Use</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="performance" name="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="design" name="design">
+                    <label for="design">Design</label>
+                </div>
+                
+
+            </fieldset>
+            <label for="review">Written Review <span class="parenthetical">(Optional)</span></label>
+            <textarea id="review" name="review"></textarea>
+            <label for="name">Your Name <span class="parenthetical">(Optional)</span></label>
+            <input type="text" id="name" name="name">
+            <input id="submit" type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            <span>©</span><span id="currentyear"></span><span>Jaren Lamprecht - Utah, USA</span>
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>
+</body>
+
+</html>
